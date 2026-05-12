@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgb(23, 44, 79);
-    --secondary-color: rgb(76, 222, 163);
+    --secondary-color: rgb(60, 200, 150);
     --background-color: rgb(240, 239, 239);
     --font1-color: rgb(255, 255, 255);
     --font2-color: rgb(21, 17, 17);
@@ -58,16 +58,18 @@ nav {
     text-align: center;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.navigation a:hover {
+    background-color: var(--background-color);
+    border-radius: 5px;
 }
 
 main {
     display: grid;
-    grid-template: 1fr auto / 700px 400px;
-    justify-content: center;
-    padding: 1rem;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
     gap: 1rem;
+    padding: 1rem;
 }
 
 h1 {
