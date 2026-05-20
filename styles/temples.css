@@ -93,24 +93,45 @@ footer p {
 }
 
 /* MEDIA QUERY */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .header-content {
         flex-direction: column;
-        gap: 15px;
+        align-items: flex-start;
+    }
+
+    #menu {
+        display: block;
+        font-size: 2rem;
+        border: 0;
+        background: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    #menu::before {
+        content: "☰";
     }
 
     nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav.open {
+        display: flex;
         flex-direction: column;
-        text-align: center;
+        gap: 10px;
     }
 
-    .gallery {
-        /* Changes to 1 column on phones */
+    nav a {
+        padding: 10px 0;
+    }
+
+    #menu.open::before {
+        content: "❌";
+    }
+
+        .gallery {
         grid-template-columns: 1fr;
-    }
-
-}
-
-#menu {
-    display: none;
+    }   
 }
