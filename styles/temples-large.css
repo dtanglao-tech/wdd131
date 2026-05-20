@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    nav {
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #menu {
+        display: block;
+        font-size: 2rem;
+        border: 0;
+        background: none;
+        color: white;
+        cursor: pointer;
+    }
+    #menu::before {
+        content: "☰";
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+    nav.open {
+        display: flex;
+    }
+    #menu.open::before {
+        content: "❌";
+    }
+}
