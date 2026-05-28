@@ -1,0 +1,38 @@
+/* MOBILE DESIGN */
+@media screen and (max-width: 768px) {
+
+    .hero {
+        display: block;
+    }
+
+    .hero img {                                                                 
+        height: auto;
+    }
+
+    .data-card,
+    .weather-card {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background: #ddd;
+        margin-top: 10px;
+    }   
+
+    .data-card h2,
+    .weather-card h2 {
+        background: none;
+        color: black;
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+
+    /* Removes emoticon in mobile view */
+    .weather-card h2::after {
+        content: "";
+    }
+
+    /* SVG weather icon only visible on mobile */
+    .mobile-weather-icon {
+        display: block;
+    }
+}
