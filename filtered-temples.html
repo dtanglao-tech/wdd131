@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Temple Album website showing beautiful temples with responsive design using HTML, CSS, and JavaScript.">
+    <meta name="author" content="Daniel Tanglao">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Temple Album</h1>
+            <button id="menu" aria-label="Open navigation menu"></button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Home" class="active">Home</a></li>
+                    <li><a href="#" title="Old">Old</a></li>
+                    <li><a href="#" title="New">New</a></li>
+                    <li><a href="#" title="Large">Large</a></li>
+                    <li><a href="#" title="Small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="temple-content">
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            ©<span id="year"></span> Daniel Tanglao | Philippines
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
