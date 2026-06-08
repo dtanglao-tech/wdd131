@@ -75,13 +75,10 @@ legend {
 .rating-group {
     display: flex;
     justify-content: space-between;
-    /* Spreads the elements evenly across the fieldset */
     max-width: 450px;
-    /* Keeps them from stretching too wide on desktop */
     margin: 1rem 0;
 }
 
-/* Add this new rule to force the stars above the radio buttons */
 .rating-option {
     display: flex;
     flex-direction: column;
@@ -89,12 +86,10 @@ legend {
     cursor: pointer;
 }
 
-/* Add this new rule to format the star strings */
 .star-text {
     font-size: 0.9rem;
     margin-bottom: 0.4rem;
     letter-spacing: -1px;
-    /* Keeps multi-stars nicely grouped together */
     color: #111827;
 }
 
@@ -155,7 +150,8 @@ footer {
 @media (max-width:600px) {
 
     .rating-group {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         gap: .5rem;
     }
 
