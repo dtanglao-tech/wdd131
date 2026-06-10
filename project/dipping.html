@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Calculate street snack and dipping sauce chemical profiles with our isolated simulator tool.">
+    <meta name="author" content="Daniel Tanglao">
+    <title>Tusok-Tusok - Dipping Station Focus</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/project.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand-title">Tusok-Tusok</div>
+        <nav>
+            <a href="index.html">Home Dashboard</a>
+            <a href="finder.html">Standalone Finder</a>
+            <a href="dipping.html" class="active">Standalone Station</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sauce-selector-block">
+            <h2>Isolated Sauce Selector Workspace</h2>
+            <div class="sauce-ui-layout">
+                <form id="preference-form" class="styled-form">
+                    <div class="form-group">
+                        <label for="food-select">Pick a Target Street Snack:</label>
+                        <select id="food-select" required>
+                            <option value="kwek-kwek">Kwek-Kwek (Quail Eggs)</option>
+                            <option value="fish-balls">Fish Balls (Crispy Rounds)</option>
+                            <option value="taho">Taho (Sweet Silken Tofu)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sauce-select">Select a Dipping Profile Base:</label>
+                        <select id="sauce-select" required>
+                            <option value="sweet">Manong's Thick Sweet Sauce</option>
+                            <option value="spicy">Siling Labuyo Spicy Glaze</option>
+                            <option value="vinegar">Spiced Onion Palm Vinegar</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Save As My Favorite Combo</button>
+                </form>
+                <div class="output-container-box">
+                    <div id="sauce-simulator" class="simulation-display">
+                        <p id="sauce-result-text">Calculating selected data profiling metrics dynamically...</p>
+                    </div>
+                    <div class="storage-feedback">
+                        <p id="saved-preference">No configuration saved in browser memory storage cache yet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 | Tusok-Tusok | Daniel Tanglao | <a href="references.html">View References Index</a></p>
+    </footer>
+</body>
+
+</html>

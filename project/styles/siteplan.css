@@ -1,16 +1,11 @@
 /* --- BRANDING DESIGN SYSTEM --- */
 :root {
     --primary-color: #E76F51;
-    /* Sweet Chili Orange */
     --secondary-color: #F4A261;
-    /* Golden Cue Amber */
     --bg-color: #FAFAFA;
-    /* Soft White */
     --text-color: #264653;
-    /* Deep Charcoal */
     --white: #FFFFFF;
     --border-gray: #DDD;
-
     --heading-font: 'Fredoka', sans-serif;
     --body-font: 'Quicksand', sans-serif;
 }

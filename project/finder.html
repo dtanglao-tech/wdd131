@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Isolate and browse specific street food catalog records with client-side catalog filtering.">
+    <meta name="author" content="Daniel Tanglao">
+    <title>Tusok-Tusok - Food Finder Focus</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/project.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand-title">Tusok-Tusok</div>
+        <nav>
+            <a href="index.html">Home Dashboard</a>
+            <a href="finder.html" class="active">Standalone Finder</a>
+            <a href="dipping.html">Standalone Station</a>
+        </nav>
+    </header>
+    <main>
+        <section class="filter-section">
+            <h2>Standalone Food Finder</h2>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-category="all">All Records</button>
+                <button class="filter-btn" data-category="savory">Savory Specialties</button>
+                <button class="filter-btn" data-category="sweet">Sweet Delicacies</button>
+            </div>
+        </section>
+        <section id="food-grid" class="food-grid">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 | Tusok-Tusok | Daniel Tanglao | <a href="references.html">View References Index</a></p>
+    </footer>
+</body>
+
+</html>

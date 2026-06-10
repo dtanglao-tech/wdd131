@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Tusok-Tusok Tales - An Interactive Guide to Filipino Street Foods">
+
+    <meta name="author" content="Daniel Tanglao">
+
+    <title>Tusok-Tusok Tales</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>Tusok-Tusok Tales</h1>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="foods.html">Foods</a></li>
+                <li><a href="sauces.html">Sauces</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h2>
+                    Discover the Flavors of Filipino Street Food
+                </h2>
+
+                <p>
+                    Explore popular snacks, dipping sauces,
+                    and the stories behind every bite.
+                </p>
+
+                <a href="foods.html" class="btn">
+                    Browse Foods
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- FEATURED -->
+
+        <section class="featured">
+
+            <h2>Featured Favorites</h2>
+
+            <div class="card-grid">
+
+                <article class="food-card">
+
+                    <img src="images/kwek-kwek.jpg" alt="Kwek-Kwek" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>Kwek-Kwek</h3>
+
+                        <p>
+                            Deep-fried quail eggs coated
+                            in bright orange batter.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="food-card">
+
+                    <img src="images/fishballs.jpg" alt="Fish Balls" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>Fish Balls</h3>
+
+                        <p>
+                            A street food classic served
+                            with sweet, spicy sauces.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="food-card">
+
+                    <img src="images/isaw.jpg" alt="Isaw" loading="lazy">
+
+                    <div class="card-content">
+
+                        <h3>Isaw</h3>
+
+                        <p>
+                            Grilled chicken or pork intestines
+                            enjoyed with vinegar sauce.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- FOOD OF THE DAY -->
+
+        <section class="food-day">
+
+            <h2>Food of the Day</h2>
+
+            <div id="foodOfDay"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © <span id="currentyear"></span>
+            Daniel Tanglao | Philippines
+        </p>
+
+        <p id="lastModified"></p>
+
+        <a href="references.html">
+            References
+        </a>
+
+    </footer>
+
+</body>
+
+</html>
