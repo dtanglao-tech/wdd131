@@ -4,6 +4,7 @@ const streetFoods = [
         name: "Kwek-Kwek",
         category: "savory",
         tags: ["Deep-Fried", "Classic"],
+        image: "images/kwek-kwek.webp",
         desc: "Hard-boiled quail eggs wrapped in crisp orange batter and flash-fried to street side perfection.",
         sauces: {
             sweet: "Thick caramelized starch syrup layered with sweet soy accents and hints of crushed garlic.",
@@ -16,6 +17,7 @@ const streetFoods = [
         name: "Fish Balls",
         category: "savory",
         tags: ["Deep-Fried", "Merienda"],
+        image: "images/fish-balls.webp",
         desc: "Crispy fried rounds of pulled fish meat, pulled sizzling hot directly out of street side woks onto skewers.",
         sauces: {
             sweet: "Smooth caramelized golden starch glaze—the classic street cart coating.",
@@ -28,6 +30,7 @@ const streetFoods = [
         name: "Taho",
         category: "sweet",
         tags: ["Sweet", "Breakfast"],
+        image: "images/taho.webp",
         desc: "Warm layers of ultra-soft silken tofu sweetened with rich caramelized arnibal brown sugar syrup and sago pearls.",
         sauces: {
             sweet: "Pure premium sugarcane reduction, simmered slow for clean molasses notes.",
@@ -55,11 +58,16 @@ function initFoodFinder() {
         dataset.forEach(item => {
             const cardHTML = `
                 <article class="food-card">
-                    <span class="card-badge">${item.category.toUpperCase()}</span>
-                    <h3>${item.name}</h3>
-                    <p>${item.desc}</p>
-                    <div class="tag-row">
-                        ${item.tags.map(t => `<span class="tag">#${t}</span>`).join("")}
+                    <div class="card-image-wrapper">
+                        <span class="card-badge">${item.category.toUpperCase()}</span>
+                        <img src="${item.image}" alt="${item.name}" class="food-image" class="card-photo" loading="lazy" width="300" height="200">
+                    </div>
+                    <div class="card-content">
+                        <h3>${item.name}</h3>
+                        <p>${item.desc}</p>
+                        <div class="tag-row">
+                            ${item.tags.map(t => `<span class="tag">#${t}</span>`).join("")}
+                        </div>
                     </div>
                 </article>
             `;
