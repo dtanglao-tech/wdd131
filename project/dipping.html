@@ -24,11 +24,17 @@
             <img src="images/logo.webp" alt="Tusok-Tusok Street Food Logo" class="site-logo" width="50" height="50">
             <span>Tusok-Tusok</span>
         </div>
-        <nav>
+    
+        <button id="menu-toggle" class="hamburger-menu" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    
+        <nav id="nav-menu" class="nav-links">
             <a href="index.html">Home Dashboard</a>
             <a href="finder.html">Standalone Finder</a>
             <a href="dipping.html" class="active">Standalone Station</a>
-            <a href="references.html">References Index</a>
         </nav>
     </header>
     <main>
@@ -37,7 +43,7 @@
             <div class="sauce-ui-layout">
                 <form id="preference-form" class="styled-form">
                     <div class="form-group">
-                        <label for="food-select">Pick a Target Street Snack:</label>
+                        <label for="food-select">Pick a Street Snack:</label>
                         <select id="food-select" required>
                             <option value="kwek-kwek">Kwek-Kwek (Quail Eggs)</option>
                             <option value="fish-balls">Fish Balls (Crispy Rounds)</option>
@@ -45,7 +51,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="sauce-select">Select a Dipping Profile Base:</label>
+                        <label for="sauce-select">Select a Dipping Base:</label>
                         <select id="sauce-select" required>
                             <option value="sweet">Manong's Thick Sweet Sauce</option>
                             <option value="spicy">Siling Labuyo Spicy Glaze</option>
@@ -56,7 +62,7 @@
                 </form>
                 <div class="output-container-box">
                     <div id="sauce-simulator" class="simulation-display">
-                        <p id="sauce-result-text">Calculating selected data profiling metrics dynamically...</p>
+                        <p id="sauce-result-text">Calculating selected data dynamically...</p>
                     </div>
                     <div class="storage-feedback">
                         <p id="saved-preference">No configuration saved in browser memory storage cache yet.</p>

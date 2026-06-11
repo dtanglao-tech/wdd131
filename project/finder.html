@@ -15,7 +15,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <script defer src="scripts/project.js"></script>
+    <script defer src="scripts/project.js" defer></script>
 </head>
 
 <body>
@@ -24,12 +24,19 @@
             <img src="images/logo.webp" alt="Tusok-Tusok Street Food Logo" class="site-logo" width="50" height="50">
             <span>Tusok-Tusok</span>
         </div>
-        <nav>
+    
+        <button id="menu-toggle" class="hamburger-menu" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    
+        <nav id="nav-menu" class="nav-links">
             <a href="index.html">Home Dashboard</a>
             <a href="finder.html" class="active">Standalone Finder</a>
             <a href="dipping.html">Standalone Station</a>
-            <a href="references.html">References Index</a>
         </nav>
+    </header>
     </header>
     <main>
         <section class="filter-section">
