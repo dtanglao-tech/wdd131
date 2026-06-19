@@ -31,11 +31,12 @@ body {
 /* --- MOBILE WIREFRAME STYLING (Default Single-Column Stack) --- */
 header {
     background-color: var(--dark-text);
-    padding: 1.5rem;
+    padding: 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 .brand-title {
@@ -43,7 +44,8 @@ header {
     align-items: center;
     gap: 0.75rem;
     color: var(--secondary);
-    font-family: var (--heading-font);
+    font-family: var(--heading-font);
+    /* 🛠️ FIXED: Removed illegal whitespace */
     font-size: 1.8rem;
     font-weight: 700;
 }
@@ -366,7 +368,6 @@ footer a {
         padding: 1rem 2.5rem;
     }
 
-    /* hide hamburger using bigger screens */
     .hamburger-menu {
         display: none !important;
     }
@@ -376,10 +377,10 @@ footer a {
         flex-direction: row !important;
         position: static;
         width: auto;
-        background: none;
         padding: 0;
         box-shadow: none;
         background-color: transparent;
+        /* 🛠️ FIXED: Cleaned redundant 'background: none;' */
         gap: 1.5rem;
     }
 
@@ -390,14 +391,14 @@ footer a {
         white-space: nowrap;
     }
 
-    /*Food Cards into a horizontal 3-Column Grid */
+    /* Food Cards into a horizontal 3-Column Grid */
     .food-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.25rem;
     }
 
-    /*Sauce Selector into a Split-Screen Display side-by-side layout */
+    /* Sauce Selector into a Split-Screen Display side-by-side layout */
     .sauce-ui-layout {
         display: grid;
         grid-template-columns: 1fr 1fr;
